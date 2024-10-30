@@ -42,6 +42,7 @@ h2 {
 }
 h3 {
   font-size: 1.75rem;
+  margin-left: 0.5rem;
   color: var(--text-primary);
 }
 .headline {
@@ -74,14 +75,16 @@ img {
 /* CONTAINER */
 
 .container {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 5.5rem 5rem 4.0625rem;
 }
 
-.next-trip p:nth-child(1) {
+.next-trip header p:nth-child(1) {
   margin-bottom: 0.5rem;
 }
 
-.next-trip h1 {
+.next-trip header h1 {
   margin-bottom: 2.5rem;
 }
 
@@ -90,6 +93,7 @@ img {
 }
 
 .next-trip img + p {
+  padding: 0 0.5rem;
   margin-top: 1.6rem;
   margin-bottom: 2.75rem;
 }
@@ -131,6 +135,11 @@ img {
 .card-travel li {
   margin-left: 1.25rem;
 }
+
+.card-travel li::marker {
+  color: var(--text-tertiary);
+}
+
 .card-travel p:nth-last-child(1) {
   color: var(--accent-blue);
   font-weight: bold;
@@ -191,4 +200,8 @@ img {
 footer {
   text-align: center;
   padding-bottom: 3rem;
+}
+
+footer p {
+  color: var(--text-secondary);
 }
