@@ -64,6 +64,13 @@ img {
   shape-margin: 1rem;
 }
 
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 36px 0;
+  background-color: #d9d9d9;
+}
+
 /* CONTAINER */
 
 .container {
